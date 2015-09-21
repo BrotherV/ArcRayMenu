@@ -16,7 +16,7 @@
         arc:hintNormalColor="#24bb27"
         arc:hintPressColor="#1c8e1f"
         arc:hintUpperMarkColor="#cdcbcb"
-        arc:leftHolderWidth="64dp"
+        arc:holderWidth="64dp"
         arc:shadowMargin ="1dp"
         arc:shadowElevation="12dp" />
 
@@ -35,7 +35,7 @@
         arc:hintUpperMarkColor="#cdcbcb"
         arc:rotateInClosing="true" 
         arc:hintTopImage = "@drawable/pen"
-        arc:leftHolderWidth="64dp"
+        arc:holderWidth="64dp"
         arc:shadowMargin ="1dp"
         arc:shadowBorderHeight="1dp"
         arc:shadowElevation="8dp" />
@@ -52,7 +52,7 @@
         arc:childSize="48dp"
         arc:hintText="M"
         arc:hintTextSize="16dp"
-        arc:leftHolderWidth="64dp"
+        arc:holderWidth="64dp"
         arc:shadowMargin ="1dp"
         arc:shadowBorderHeight="1dp"
         arc:shadowBorderWidth="-1dp"
@@ -71,7 +71,7 @@
         arc:hintNormalColor="#24bb27"
         arc:hintPressColor="#1c8e1f"
         arc:hintUpperMarkColor="#cdcbcb"
-        arc:leftHolderWidth="64dp"
+        arc:holderWidth="64dp"
         arc:shadowMargin ="1dp"
         arc:shadowBorderHeight="1dp"
         arc:shadowBorderWidth="-1dp"

@@ -50,57 +50,57 @@ import android.widget.TextView;
  */
 public class ArcMenu extends RelativeLayout {
 
-    public static final int    TOP_LEFT	     = 1;
-    public static final int    TOP_RIGHT	    = 2;
-    public static final int    TOP_MIDDLE	   = 3;
-    public static final int    BOTTOM_LEFT	  = 4;
-    public static final int    BOTTOM_RIGHT	 = 5;
-    public static final int    BOTTOM_MIDDLE	= 6;
-    public static final int    RIGHT_MIDDLE	 = 7;
-    public static final int    LEFT_MIDDLE	  = 8;
-    public static final int    CENTER	       = 9;
+    public static final int     TOP_LEFT	     = 1;
+    public static final int     TOP_RIGHT	    = 2;
+    public static final int     TOP_MIDDLE	   = 3;
+    public static final int     BOTTOM_LEFT	  = 4;
+    public static final int     BOTTOM_RIGHT	 = 5;
+    public static final int     BOTTOM_MIDDLE	= 6;
+    public static final int     RIGHT_MIDDLE	 = 7;
+    public static final int     LEFT_MIDDLE	  = 8;
+    public static final int     CENTER	       = 9;
 
-    public static final String DEFAULT_NORMAL_COLOR = "#cf1c1f";
+    private static final String DEFAULT_NORMAL_COLOR = "#cf1c1f";
 
-    public static final String DEFAULT_PRESS_COLOR  = "#ac181a";
+    private static final String DEFAULT_PRESS_COLOR  = "#ac181a";
 
-    public static final String DEFAULT_SING_COLOR   = "#757575";
+    private static final String DEFAULT_SING_COLOR   = "#757575";
 
-    private Context	    context;
+    private Context	     context;
 
-    private ArcLayout	  mArcLayout;
+    private ArcLayout	   mArcLayout;
 
-    private CircleMenu	 mHintBackground;
+    private CircleMenu	  mHintBackground;
 
-    private CircleShadow       mHintShadow;
+    private CircleShadow	mHintShadow;
 
-    private ImageView	  mHintTopImage;
+    private ImageView	   mHintTopImage;
 
-    private ImageView	  mHintViewV;
+    private ImageView	   mHintViewV;
 
-    private ImageView	  mHintViewH;
+    private ImageView	   mHintViewH;
 
-    private TextView	   mHintTextView;
+    private TextView	    mHintTextView;
 
-    private FrameLayout	controlLayout;
+    private FrameLayout	 controlLayout;
 
-    private String	     hintPressColor       = DEFAULT_PRESS_COLOR;
+    private String	      hintPressColor       = DEFAULT_PRESS_COLOR;
 
-    private String	     hintNormalColor      = DEFAULT_NORMAL_COLOR;
+    private String	      hintNormalColor      = DEFAULT_NORMAL_COLOR;
 
-    private String	     hintSingColor	= DEFAULT_SING_COLOR;
+    private String	      hintSingColor	= DEFAULT_SING_COLOR;
 
-    private int		hintGravity	  = CENTER;
+    private int		 hintGravity	  = CENTER;
 
-    private int		hintSize	     = 56;
+    private int		 hintSize	     = 56;
 
-    private boolean	    mHintTextVisibilityControl;
+    private boolean	     mHintTextVisibilityControl;
 
-    private boolean	    elevationCheck;
+    private boolean	     elevationCheck;
 
-    private int		shifHint	     = 24;
-    int			shifHintPlus	 = shifHint;
-    private int		shifChild;
+    private int		 shifHint	     = 24;
+    int			 shifHintPlus	 = shifHint;
+    private int		 shifChild;
 
     public ArcMenu(Context context) {
 	super(context);
@@ -566,10 +566,14 @@ public class ArcMenu extends RelativeLayout {
 	}
     }
 
-    public void setHintText(String shadowColor, String shadowRColor) {
+    public void setHintShadowColor(String shadowColor, String shadowRColor) {
 
 	if (shadowColor != null || shadowRColor != null) {
 	    mHintShadow.setShadowColor(shadowColor, shadowRColor);
 	}
+    }
+
+    public void setRotationInClosing(boolean l) {
+	mArcLayout.setItemRotation(l);
     }
 }

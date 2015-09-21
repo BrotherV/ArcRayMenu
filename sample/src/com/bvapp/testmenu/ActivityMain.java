@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 BrotherV (Develope on Capricon Arc and Ray Menu)
+ * Copyright (C) 2015 BrotherV
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

@@ -43,55 +43,55 @@ import android.widget.TextView;
 
 public class RayMenu extends RelativeLayout {
 
-    private static final int   DEFAUL_CHILD_SIZE    = 56;
+    private static final int    DEFAUL_CHILD_SIZE    = 56;
 
-    public static final String DEFAULT_NORMAL_COLOR = "#cf1c1f";
+    private static final String DEFAULT_NORMAL_COLOR = "#cf1c1f";
 
-    public static final String DEFAULT_PRESS_COLOR  = "#ac181a";
+    private static final String DEFAULT_PRESS_COLOR  = "#ac181a";
 
-    public static final String DEFAULT_SING_COLOR   = "#757575";
+    private static final String DEFAULT_SING_COLOR   = "#757575";
 
-    public static final int    DEFAULT_HOLDER_WIDTH = 56;
+    private static final int    DEFAULT_HOLDER_WIDTH = 56;
 
-    private static final int   POSITIVE_DIRECTION_V = 1;
-    private static final int   POSITIVE_DIRECTION_H = 2;
-    private static final int   NEGATIVE_DIRECTION_V = 3;
-    private static final int   NEGATIVE_DIRECTION_H = 4;
+    public static final int     POSITIVE_DIRECTION_V = 1;
+    public static final int     POSITIVE_DIRECTION_H = 2;
+    public static final int     NEGATIVE_DIRECTION_V = 3;
+    public static final int     NEGATIVE_DIRECTION_H = 4;
 
-    private Context	    context;
+    private Context	     context;
 
-    private RayLayout	  mRayLayout;
+    private RayLayout	   mRayLayout;
 
-    private CircleMenu	 mHintBackground;
+    private CircleMenu	  mHintBackground;
 
-    private CircleShadow       mHintShadow;
+    private CircleShadow	mHintShadow;
 
-    private ImageView	  mHintTopImage;
+    private ImageView	   mHintTopImage;
 
-    private ImageView	  mHintViewV;
+    private ImageView	   mHintViewV;
 
-    private ImageView	  mHintViewH;
+    private ImageView	   mHintViewH;
 
-    private TextView	   mHintTextView;
+    private TextView	    mHintTextView;
 
-    private FrameLayout	controlLayout;
+    private FrameLayout	 controlLayout;
 
-    private String	     hintPressColor       = DEFAULT_PRESS_COLOR;
+    private String	      hintPressColor       = DEFAULT_PRESS_COLOR;
 
-    private String	     hintNormalColor      = DEFAULT_NORMAL_COLOR;
+    private String	      hintNormalColor      = DEFAULT_NORMAL_COLOR;
 
-    private String	     hintSingColor	= DEFAULT_SING_COLOR;
+    private String	      hintSingColor	= DEFAULT_SING_COLOR;
 
-    private int		hintDirection	= 1;
+    private int		 hintDirection	= 1;
 
-    private int		hintSize	     = 56;
+    private int		 hintSize	     = 56;
 
-    private boolean	    mHintTextVisibilityControl;
+    private boolean	     mHintTextVisibilityControl;
 
-    private boolean	    elevationCheck;
+    private boolean	     elevationCheck;
 
-    private int		shifHint	     = 0;
-    private int		shifHintPlus	 = shifHint;
+    private int		 shifHint	     = 0;
+    private int		 shifHintPlus	 = shifHint;
 
     public RayMenu(Context context) {
 	super(context);
@@ -172,10 +172,8 @@ public class RayMenu extends RelativeLayout {
 		    convertDpToPixel(hintSize, context));
 	    hintSize = hintPixelSize;
 
-	    int holderWidth = a
-		    .getDimensionPixelSize(
-			    R.styleable.RayLayout_leftHolderWidth,
-			    DEFAULT_HOLDER_WIDTH);
+	    int holderWidth = a.getDimensionPixelSize(
+		    R.styleable.RayLayout_holderWidth, DEFAULT_HOLDER_WIDTH);
 
 	    int newHintDirection = a.getInt(
 		    R.styleable.RayLayout_MenuDirection, hintDirection);
@@ -400,6 +398,14 @@ public class RayMenu extends RelativeLayout {
 	mRayLayout.setChildSize(childSize);
     }
 
+    public void setHolderWidth(int holder) {
+	holder = convertDpToPixel(holder, context);
+	if (holder < hintSize || holder > (64 + hintSize)) {
+	    return;
+	}
+	mRayLayout.setHolderWidth(holder);
+    }
+
     public void setShadow(int se, int h, int w, int sm) {
 	shifHintPlus = shifHint;
 	if (w != 0 || h != 0 || se > 0) {
@@ -549,11 +555,15 @@ public class RayMenu extends RelativeLayout {
 	}
     }
 
-    public void setHintText(String shadowColor, String shadowRColor) {
+    public void setHintShadowColor(String shadowColor, String shadowRColor) {
 
 	if (shadowColor != null || shadowRColor != null) {
 	    mHintShadow.setShadowColor(shadowColor, shadowRColor);
 	}
+    }
+
+    public void setRotationInClosing(boolean l) {
+	mRayLayout.setItemRotation(l);
     }
 
 }

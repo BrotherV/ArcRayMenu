@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 BrotherV(Based on Capricon ArcRay Menu RotateAndTranslateAnimation Class)
+ * Copyright (C) 2015 BrotherV(Based on Capricorn Rotate And Translate Animation Class)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 
 package com.bvapp.arcraymenu;
 

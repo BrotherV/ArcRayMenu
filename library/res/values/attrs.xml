@@ -31,7 +31,7 @@
     </declare-styleable>
 	
 	<declare-styleable name="RayLayout">
-		<attr name="leftHolderWidth" format="dimension" />
+		<attr name="holderWidth" format="dimension" />
         <attr name="MenuDirection" format="integer">
             <enum name="Positive_Vertical" value="1" />
   			<enum name="Positive_Horizontal" value="2" />
