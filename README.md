@@ -1,5 +1,5 @@
 #ArcMenu & RayMenu
-The menu is designed for use on Android. app designers can use this menu for their applications. I tried to fix issues with previos version of [arcraymenu](https://github.com/daCapricorn/ArcMenu) and applied many changes.
+The menu is designed for use on Android. app designers can use this menu for their applications. I tried to fix issues in previos version of [arcraymenu](https://github.com/daCapricorn/ArcMenu) and applied many changes.
 
 ##ArcMenu
 * 1-Corner issues fixed.
