@@ -10,7 +10,7 @@ The menu is designed for use on Android. app designers can use this menu for the
 * 6-Can add specific color on Hint normal button and press color.
 * 7-Attribute completly changed
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=vI3pf3Thlss)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/vI3pf3Thlss)
 * ![Preview](http://s1.postimg.org/im0ag2knj/Screenshot_2015_09_21_13_28_31.png)  ![Preview](http://s1.postimg.org/v5qtq2jgv/Screenshot_2015_09_21_13_28_53.png)
 * ![Preview](http://s1.postimg.org/t2kzw591r/Screenshot_2015_09_21_13_28_58.png)  ![Preview](http://s1.postimg.org/4uvtduvpr/Screenshot_2015_09_21_13_29_02.png)
 * ![Preview](http://s1.postimg.org/jfcw8oqof/Screenshot_2015_09_21_13_29_06.png)  ![Preview](http://s1.postimg.org/q9rsc48pb/Screenshot_2015_09_21_13_29_11.png)
