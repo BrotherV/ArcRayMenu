@@ -23,22 +23,22 @@ If you want set all attr in xml fil, you must now also add ``` xml xmlns:arc="ht
 ###Set Child size
 * xml usage
 ``` xml
-  arc::childSize="48dp"
+  arc:childSize="48dp"
 ```
 * java usage
 ``` java
   ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
-  arcMenu..setChildSize(childSize);
+  arcMenu.setChildSize(childSize);
 ```
 
 ###Set Hint Button Colors and Marker Color
-* xml usage (color is type of string without alpha)
+* xml usage (color is a type of string without alpha)
 ``` xml
   arc:hintNormalColor="#24bb27"
   arc:hintPressColor="#1c8e1f"
   arc:hintUpperMarkColor="#cdcbcb"
 ```
-* java usage (color is type of string without alpha)
+* java usage (color is a type of string without alpha)
 ``` java
   ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
   arcMenu.setHintColor(hintNormalColor, hintPressColor);
@@ -81,13 +81,14 @@ If you want set all attr in xml fil, you must now also add ``` xml xmlns:arc="ht
   ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
   arcMenu.setShadow(shadowElevation, shadowBorderHeight, shadowBorderWidth, shadowMargin);
 ```
+
 ###Set Shadow Colors
 * xml usage
 ``` xml
   arc:shadowColor="#24bb27"
   arc:shadowAroundColor="#1c8e1f"
 ```
-* java usage (Remember, if you set the image, text and plus marker will be disable automatically)
+* java usage
 ``` java
   ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
   arcMenu.setHintShadowColor(shadowColor, shadowAroundColor);
@@ -115,6 +116,25 @@ If you want set all attr in xml fil, you must now also add ``` xml xmlns:arc="ht
   ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
   arcMenu.setRotationInClosing(true);
 ```
+###xml Sample
+``` xml
+ android:id="@+id/arc_menu_6"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="top|left"
+ arc:childSize="48dp"
+ arc:hintGravity="Top_Left"
+ arc:hintNormalColor="#2a79d2"
+ arc:hintPressColor="#1e5797"
+ arc:hintUpperMarkColor="#cdcbcb"
+ arc:rotateInClosing="true" 
+ arc:hintTopImage = "@drawable/pen"
+ arc:shadowMargin ="1dp"
+ arc:shadowBorderHeight="-1dp"
+ arc:shadowBorderWidth="-1dp"
+ arc:shadowElevation="8dp"
+```
+----
 
 ##RayMenu
 * 1-Hint direction issues fixed.
@@ -128,7 +148,7 @@ If you want set all attr in xml fil, you must now also add ``` xml xmlns:arc="ht
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=tzQ7qBW-bxg)
 * ![Preview](http://s1.postimg.org/4099rtnv3/Screenshot_2015_09_21_13_11_04.png)  ![Preview](http://s1.postimg.org/41j7l8pov/Screenshot_2015_09_21_13_11_27.png)
 
-###In Ray Menu all all values are the same except Corner Gravity but there are two new value.
+###In Ray Menu all values are the same except Corner Gravity but still there are two new values.
 
 ###Set Ray Menu Direction
 * xml usage
@@ -151,10 +171,32 @@ If you want set all attr in xml fil, you must now also add ``` xml xmlns:arc="ht
   RayMenu rayMenu = (RayMenu) findViewById(R.id.ray_menu);
   rayMenu.setHolderWidth(64);
 ```
-
+###xml Sample
+``` xml
+ android:id="@+id/ray_menu_1"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="top|right"
+ android:gravity="center"
+ android:paddingLeft="5dp"
+ android:paddingRight="5dp"
+ arc:MenuDirection="1"
+ arc:childSize="48dp"
+ arc:hintNormalColor="#2a79d2"
+ arc:hintPressColor="#1e5797"
+ arc:hintUpperMarkColor="#cdcbcb"
+ arc:rotateInClosing="true" 
+ arc:hintTopImage = "@drawable/pen"
+ arc:holderWidth="64dp"
+ arc:shadowMargin ="1dp"
+ arc:shadowBorderHeight="1dp"
+ arc:shadowElevation="8dp"
+```
+----
 ##Author
 
 **BrotherV**
+
 I must sincerely thank [Capricon] (https://github.com/daCapricorn). Tell me about your dreams and if you have problem with this library just tell me.
 
 [My email] (mailto:mohsen_hatami@ymail.com)
