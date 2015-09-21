@@ -151,6 +151,7 @@ If you want set all attr in xml file, you must also add ``` xml xmlns:arc="http:
 ###In Ray Menu all values are the same except Corner Gravity but still there are two new values.
 
 ###Set Ray Menu Direction
+With this parameter you can set hint button gravity and child opening direction, for example Negativ_vertivar set hint button to bottom and child opening direction from down to up.
 * xml usage
 ``` xml
   arc:MenuDirection="Negative_Vertical"  //set Hint button to bottom and child grow to up
@@ -162,6 +163,7 @@ If you want set all attr in xml file, you must also add ``` xml xmlns:arc="http:
 ```
 
 ###Set Holder Width
+You can specify the first child position from the beginning when menu is open.
 * xml usage
 ``` xml
   arc:holderWidth="64dp"
