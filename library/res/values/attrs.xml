@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="ArcMenu">
+    	<attr name="hintSize" format="dimension|reference" />
+    	<attr name="childSize" format="dimension|reference" />
+    	<attr name="hintNormalColor" format="string" />
+    	<attr name="hintPressColor" format="string" />
+    	<attr name="hintUpperMarkColor" format="string" />
+    	<attr name="hintText" format="string" />
+    	<attr name="hintTextSize" format="dimension" />
+    	<attr name="rotateInClosing" format="boolean" />
+    	<attr name="shadowBorderWidth" format="dimension" />
+    	<attr name="shadowBorderHeight" format="dimension" />
+    	<attr name="shadowElevation" format="dimension" />
+    	<attr name="shadowColor" format="string" />
+    	<attr name="shadowAroundColor" format="string" />
+    	<attr name="shadowMargin" format="dimension" />
+        <attr name="hintTopImage" format="integer"/>
+        <attr name="hintGravity" format="integer">
+            <enum name="Top_Left" value="1" />
+  			<enum name="Top_Right" value="2" />
+  			<enum name="Top_Middle" value="3" />
+            <enum name="Bottom_Left" value="4" />
+  			<enum name="Bottom_Right" value="5" />
+            <enum name="Bottom_Middle" value="6" />
+  			<enum name="Right_Middle" value="7" />
+  			<enum name="Left_Middle" value="8" />
+  			<enum name="Center" value="9" />
+    	</attr>
+    </declare-styleable>
+	
+	<declare-styleable name="RayLayout">
+		<attr name="leftHolderWidth" format="dimension" />
+        <attr name="MenuDirection" format="integer">
+            <enum name="Positive_Vertical" value="1" />
+  			<enum name="Positive_Horizontal" value="2" />
+  			<enum name="Negative_Vertical" value="3" />
+            <enum name="Negative_Horizontal" value="4" />
+    	</attr>
+	</declare-styleable>
+</resources>

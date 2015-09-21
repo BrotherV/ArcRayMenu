@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.bvapp.arcraymenu.RayMenu
+        android:id="@+id/ray_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        arc:MenuDirection="2"
+        arc:childSize="48dp"
+        arc:hintNormalColor="#24bb27"
+        arc:hintPressColor="#1c8e1f"
+        arc:hintUpperMarkColor="#cdcbcb"
+        arc:leftHolderWidth="64dp"
+        arc:shadowMargin ="1dp"
+        arc:shadowElevation="12dp" />
+
+    <com.bvapp.arcraymenu.RayMenu
+        android:id="@+id/ray_menu_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        arc:MenuDirection="1"
+        arc:childSize="48dp"
+        arc:hintNormalColor="#2a79d2"
+        arc:hintPressColor="#1e5797"
+        arc:hintUpperMarkColor="#cdcbcb"
+        arc:rotateInClosing="true" 
+        arc:hintTopImage = "@drawable/pen"
+        arc:leftHolderWidth="64dp"
+        arc:shadowMargin ="1dp"
+        arc:shadowBorderHeight="1dp"
+        arc:shadowElevation="8dp" />
+
+    <com.bvapp.arcraymenu.RayMenu
+        android:id="@+id/ray_menu_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        arc:MenuDirection="3"
+        arc:childSize="48dp"
+        arc:hintText="M"
+        arc:hintTextSize="16dp"
+        arc:leftHolderWidth="64dp"
+        arc:shadowMargin ="1dp"
+        arc:shadowBorderHeight="1dp"
+        arc:shadowBorderWidth="-1dp"
+        arc:shadowElevation="8dp" />
+
+    <com.bvapp.arcraymenu.RayMenu
+        android:id="@+id/ray_menu_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        arc:MenuDirection="4"
+        arc:childSize="48dp"
+        arc:hintNormalColor="#24bb27"
+        arc:hintPressColor="#1c8e1f"
+        arc:hintUpperMarkColor="#cdcbcb"
+        arc:leftHolderWidth="64dp"
+        arc:shadowMargin ="1dp"
+        arc:shadowBorderHeight="1dp"
+        arc:shadowBorderWidth="-1dp"
+        arc:shadowElevation="8dp" />
+
+</FrameLayout>
