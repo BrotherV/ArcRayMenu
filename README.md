@@ -20,6 +20,17 @@ This menu designed to use on Android. app designers can use this menu for their 
 ##ArcMenu Usage
 If you want set all attr in xml file, you must also add ``` xml xmlns:arc="http://schemas.android.com/apk/res-auto" ``` to your xml activity.
 
+###Set Hint size
+* xml usage
+``` xml
+  arc:hintSize="56dp"
+```
+* java usage
+``` java
+  ArcMenu arcMenu = (ArcMenu) findViewById(R.id.arc_menu);
+  arcMenu.setHintSize(hintSize);
+```
+
 ###Set Child size
 * xml usage
 ``` xml
