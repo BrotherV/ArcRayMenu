@@ -99,8 +99,18 @@ public class ArcMenu extends RelativeLayout {
     private boolean	     elevationCheck;
 
     private int		 shifHint	     = 24;
-    int			 shifHintPlus	 = shifHint;
+
+    private int		 shifHintPlus	 = shifHint;
+
     private int		 shifChild;
+
+    private int		 shadowBorderWidth;
+
+    private int		 shadowBorderHeight;
+
+    private int		 shadowElevation;
+
+    private int		 shadowMargin;
 
     public ArcMenu(Context context) {
 	super(context);
@@ -180,7 +190,8 @@ public class ArcMenu extends RelativeLayout {
 	    int hintPixelSize = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_hintSize,
 		    convertDpToPixel(hintSize, context));
-	    hintSize = hintPixelSize;
+	    setHintSize(hintPixelSize);
+
 	    shifHint = 24;
 	    shifChild = (int) (shifHint + childSize / 1.8f);
 
@@ -247,14 +258,14 @@ public class ArcMenu extends RelativeLayout {
 		mHintShadow.setShadowColor(shadowColor, shadowRColor);
 	    }
 
-	    int shadowBorderWidth = b.getDimensionPixelSize(
+	    shadowBorderWidth = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowBorderWidth, 0);
-	    int shadowBorderHeight = b.getDimensionPixelSize(
+	    shadowBorderHeight = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowBorderHeight, 0);
-	    int shadowElevation = b.getDimensionPixelSize(
+	    shadowElevation = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowElevation, 0);
 
-	    int shadowMargin = b.getDimensionPixelSize(
+	    shadowMargin = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowMargin, 0);
 	    Log.i("Log", "shadowMargin = " + shadowMargin);
 	    setShadow(shadowElevation, shadowBorderHeight, shadowBorderWidth,
@@ -417,7 +428,7 @@ public class ArcMenu extends RelativeLayout {
 
 	    shifHintPlus -= 2;
 
-	    if (se != 0) {
+	    if (se > 0) {
 		elevationCheck = true;
 	    }
 	    int offset = 8;
@@ -575,5 +586,20 @@ public class ArcMenu extends RelativeLayout {
 
     public void setRotationInClosing(boolean l) {
 	mArcLayout.setItemRotation(l);
+    }
+
+    public void setHintSize(int size) {
+	if (size < hintSize || size > (hintSize + 64)) {
+	    return;
+	}
+
+	hintSize = size;
+	FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) mHintBackground
+		.getLayoutParams();
+	params.height = hintSize;
+	params.width = hintSize;
+	mHintBackground.setLayoutParams(params);
+
+	requestLayout();
     }
 }

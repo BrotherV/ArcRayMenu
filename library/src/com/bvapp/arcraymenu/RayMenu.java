@@ -91,7 +91,16 @@ public class RayMenu extends RelativeLayout {
     private boolean	     elevationCheck;
 
     private int		 shifHint	     = 0;
+
     private int		 shifHintPlus	 = shifHint;
+
+    private int		 shadowBorderWidth;
+
+    private int		 shadowBorderHeight;
+
+    private int		 shadowElevation;
+
+    private int		 shadowMargin;
 
     public RayMenu(Context context) {
 	super(context);
@@ -170,7 +179,7 @@ public class RayMenu extends RelativeLayout {
 	    int hintPixelSize = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_hintSize,
 		    convertDpToPixel(hintSize, context));
-	    hintSize = hintPixelSize;
+	    setHintSize(hintPixelSize);
 
 	    int holderWidth = a.getDimensionPixelSize(
 		    R.styleable.RayLayout_holderWidth, DEFAULT_HOLDER_WIDTH);
@@ -242,13 +251,13 @@ public class RayMenu extends RelativeLayout {
 	    mHintViewV.setBackgroundColor(Color.parseColor(hintSingColor));
 	    mHintViewH.setBackgroundColor(Color.parseColor(hintSingColor));
 
-	    int shadowBorderWidth = b.getDimensionPixelSize(
+	    shadowBorderWidth = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowBorderWidth, 0);
-	    int shadowBorderHeight = b.getDimensionPixelSize(
+	    shadowBorderHeight = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowBorderHeight, 0);
-	    int shadowElevation = b.getDimensionPixelSize(
+	    shadowElevation = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowElevation, 0);
-	    int shadowMargin = b.getDimensionPixelSize(
+	    shadowMargin = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowMargin, 0);
 
 	    Log.i("Log", "shadowMargin = " + shadowMargin);
@@ -566,4 +575,18 @@ public class RayMenu extends RelativeLayout {
 	mRayLayout.setItemRotation(l);
     }
 
+    public void setHintSize(int size) {
+	if (size < hintSize || size > (hintSize + 64)) {
+	    return;
+	}
+
+	hintSize = size;
+	FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) mHintBackground
+		.getLayoutParams();
+	params.height = hintSize;
+	params.width = hintSize;
+	mHintBackground.setLayoutParams(params);
+
+	requestLayout();
+    }
 }
