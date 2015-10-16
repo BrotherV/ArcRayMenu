@@ -18,7 +18,7 @@ This menu designed to use on Android. app designers can use this menu for their 
 * ![Preview](http://s1.postimg.org/4r6lbcfm7/Screenshot_2015_09_21_13_29_31.png)
  
 ##ArcMenu Usage
-If you want set all attr in xml file, you must also add ``` xml xmlns:arc="http://schemas.android.com/apk/res-auto" ``` to your xml activity.
+If you want set all attr, you must also add ``` xml xmlns:arc="http://schemas.android.com/apk/res-auto" ``` to your xml file.
 
 ###Set Hint size
 * xml usage
