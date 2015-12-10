@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bvapp.samplearcmenu.ActivityMain" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <com.bvapp.arcraymenu.ArcMenu
+        android:id="@+id/arcMenu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:gravity="bottom|right"
+        arc:hintGravity="Bottom_Right"
+        arc:childSize="48dp"
+        arc:shadowMargin ="1dp" 
+        arc:shadowBorderHeight="1dp"
+        arc:shadowBorderWidth="1dp"
+        arc:shadowElevation="8dp"
+        arc:hintNormalColor="#2a79d2"
+        arc:hintPressColor="#1e5797"
+        arc:hintUpperMarkColor="#cdcbcb"
+        arc:rotateInClosing="true" 
+        arc:hintTopImage = "@drawable/pen">
+
+    </com.bvapp.arcraymenu.ArcMenu>
+
+</FrameLayout>
