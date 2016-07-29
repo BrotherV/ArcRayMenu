@@ -1,5 +1,5 @@
-Notic: if you want to change Arc Menu child distances, just increase MIN_RADIUS value in ArcLayout.java.
-Notic: if you want to change Ray Menu child distances, just increase DEFAULT_CHILD_GAP value in RayLayout.java.
+*Notic: if you want to change Arc Menu child distances, just increase MIN_RADIUS value in ArcLayout.java.
+*Notic: if you want to change Ray Menu child distances, just increase DEFAULT_CHILD_GAP value in RayLayout.java.
 
 #ArcMenu & RayMenu
 This menu designed to use on Android. app designers can use this menu for their applications. I tried to fix issues in previos version of [arcraymenu](https://github.com/daCapricorn/ArcMenu) and applied many changes.
