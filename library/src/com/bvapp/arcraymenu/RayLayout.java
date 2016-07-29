@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 package com.bvapp.arcraymenu;
 
 import android.content.Context;
@@ -38,6 +38,8 @@ public class RayLayout extends RelativeLayout {
     private static final int POSITIVE_DIRECTION_H = 2;
     private static final int NEGATIVE_DIRECTION_V = 3;
     private static final int NEGATIVE_DIRECTION_H = 4;
+
+    private static final int DEFAULT_CHILD_GAP    = 20;
 
     private int	      expandDirection      = 2;
 
@@ -107,7 +109,8 @@ public class RayLayout extends RelativeLayout {
     @Override
     protected int getSuggestedMinimumHeight() {
 	if (directionControl) {
-	    return mHolderWidth + mChildSize * getChildCount();
+	    return mHolderWidth + (mChildSize + DEFAULT_CHILD_GAP)
+		    * getChildCount();
 	} else {
 	    return mChildSize;
 	}
@@ -118,7 +121,8 @@ public class RayLayout extends RelativeLayout {
 	if (directionControl) {
 	    return mChildSize;
 	} else {
-	    return mHolderWidth + mChildSize * getChildCount();
+	    return mHolderWidth + (mChildSize + DEFAULT_CHILD_GAP)
+		    * getChildCount();
 	}
     }
 
@@ -166,7 +170,7 @@ public class RayLayout extends RelativeLayout {
 	}
 
 	mChildGap = computeChildGap(directionLenght - mHolderWidth, count,
-		mChildSize, 0);
+		mChildSize, DEFAULT_CHILD_GAP);
 
 	for (int i = 0; i < count; i++) {
 	    getChildAt(i)
@@ -361,7 +365,7 @@ public class RayLayout extends RelativeLayout {
 	    return;
 	}
 
-	this.mHolderWidth = mHolderWidth;
+	this.mHolderWidth = mHolderWidth + DEFAULT_CHILD_GAP;
 
 	requestLayout();
     }

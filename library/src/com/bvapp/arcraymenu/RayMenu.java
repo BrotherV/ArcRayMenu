@@ -41,6 +41,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bvapp.samplearcmenu.R;
+
 public class RayMenu extends RelativeLayout {
 
     private static final int    DEFAUL_CHILD_SIZE    = 56;
