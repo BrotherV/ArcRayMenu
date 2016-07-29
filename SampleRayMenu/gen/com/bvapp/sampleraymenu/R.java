@@ -33,8 +33,8 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>Left_to_Right</code></td><td>1</td><td></td></tr>
-<tr><td><code>Up_to_Down</code></td><td>2</td><td></td></tr>
+<tr><td><code>Up_to_Down</code></td><td>1</td><td></td></tr>
+<tr><td><code>Left_to_Right</code></td><td>2</td><td></td></tr>
 <tr><td><code>Down_to_Up</code></td><td>3</td><td></td></tr>
 <tr><td><code>Right_to_Left</code></td><td>4</td><td></td></tr>
 </table>
@@ -4850,8 +4850,8 @@ containing a value of this type.
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>Left_to_Right</code></td><td>1</td><td></td></tr>
-<tr><td><code>Up_to_Down</code></td><td>2</td><td></td></tr>
+<tr><td><code>Up_to_Down</code></td><td>1</td><td></td></tr>
+<tr><td><code>Left_to_Right</code></td><td>2</td><td></td></tr>
 <tr><td><code>Down_to_Up</code></td><td>3</td><td></td></tr>
 <tr><td><code>Right_to_Left</code></td><td>4</td><td></td></tr>
 </table>
