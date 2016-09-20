@@ -41,8 +41,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.bvapp.samplearcmenu.R;
-
 /**
  * A custom view that looks like the menu in <a href="https://path.com">Path
  * 2.0</a> (for iOS).

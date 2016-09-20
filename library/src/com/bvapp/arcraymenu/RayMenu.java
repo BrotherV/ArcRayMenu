@@ -41,8 +41,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.bvapp.samplearcmenu.R;
-
 public class RayMenu extends RelativeLayout {
 
     private static final int    DEFAUL_CHILD_SIZE    = 56;
@@ -93,16 +91,7 @@ public class RayMenu extends RelativeLayout {
     private boolean	     elevationCheck;
 
     private int		 shifHint	     = 0;
-
     private int		 shifHintPlus	 = shifHint;
-
-    private int		 shadowBorderWidth;
-
-    private int		 shadowBorderHeight;
-
-    private int		 shadowElevation;
-
-    private int		 shadowMargin;
 
     public RayMenu(Context context) {
 	super(context);
@@ -253,13 +242,13 @@ public class RayMenu extends RelativeLayout {
 	    mHintViewV.setBackgroundColor(Color.parseColor(hintSingColor));
 	    mHintViewH.setBackgroundColor(Color.parseColor(hintSingColor));
 
-	    shadowBorderWidth = b.getDimensionPixelSize(
+	    int shadowBorderWidth = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowBorderWidth, 0);
-	    shadowBorderHeight = b.getDimensionPixelSize(
+	    int shadowBorderHeight = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowBorderHeight, 0);
-	    shadowElevation = b.getDimensionPixelSize(
+	    int shadowElevation = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowElevation, 0);
-	    shadowMargin = b.getDimensionPixelSize(
+	    int shadowMargin = b.getDimensionPixelSize(
 		    R.styleable.ArcMenu_shadowMargin, 0);
 
 	    Log.i("Log", "shadowMargin = " + shadowMargin);
