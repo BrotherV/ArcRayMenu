@@ -1,3 +1,5 @@
+#This library is deprecated, There is a new ersion of this library in my repository.
+
 * Notic: if you want to change Arc Menu child distances, just increase MIN_RADIUS value in ArcLayout.java.
 * Notic: if you want to change Ray Menu child distances, just increase DEFAULT_CHILD_GAP value in RayLayout.java.
 
@@ -12,13 +14,6 @@ This menu designed to use on Android. app designers can use this menu for their 
 * 5-Can add specific image on Hint button
 * 6-Can add specific color on Hint normal button and press color.
 * 7-Attribute completly changed
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/vI3pf3Thlss)
-* ![Preview](http://s1.postimg.org/im0ag2knj/Screenshot_2015_09_21_13_28_31.png)  ![Preview](http://s1.postimg.org/v5qtq2jgv/Screenshot_2015_09_21_13_28_53.png)
-* ![Preview](http://s1.postimg.org/t2kzw591r/Screenshot_2015_09_21_13_28_58.png)  ![Preview](http://s1.postimg.org/4uvtduvpr/Screenshot_2015_09_21_13_29_02.png)
-* ![Preview](http://s1.postimg.org/jfcw8oqof/Screenshot_2015_09_21_13_29_06.png)  ![Preview](http://s1.postimg.org/q9rsc48pb/Screenshot_2015_09_21_13_29_11.png)
-* ![Preview](http://s1.postimg.org/kzmtktogf/Screenshot_2015_09_21_13_29_15.png)  ![Preview](http://s1.postimg.org/8m9zdwyrz/Screenshot_2015_09_21_13_29_19.png)
-* ![Preview](http://s1.postimg.org/4r6lbcfm7/Screenshot_2015_09_21_13_29_31.png)
  
 ##ArcMenu Usage
 If you want set all attr, you must also add ``` xml xmlns:arc="http://schemas.android.com/apk/res-auto" ``` to your xml file.
