@@ -1,4 +1,4 @@
-#This library is deprecated, There is a new ersion of this library in my repository.
+#This library is deprecated, There is a new version of this library in my repository.
 
 * Notic: if you want to change Arc Menu child distances, just increase MIN_RADIUS value in ArcLayout.java.
 * Notic: if you want to change Ray Menu child distances, just increase DEFAULT_CHILD_GAP value in RayLayout.java.
