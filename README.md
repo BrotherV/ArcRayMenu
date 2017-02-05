@@ -154,9 +154,6 @@ If you want set all attr, you must also add ``` xml xmlns:arc="http://schemas.an
 * 6-Can add specific color on Hint normal button and press color.
 * 7-Attribute completly changed
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=tzQ7qBW-bxg)
-* ![Preview](http://s1.postimg.org/4099rtnv3/Screenshot_2015_09_21_13_11_04.png)  ![Preview](http://s1.postimg.org/41j7l8pov/Screenshot_2015_09_21_13_11_27.png)
-
 ###In Ray Menu all values are the same except Corner Gravity but still there are two new values.
 
 ###Set Ray Menu Direction
